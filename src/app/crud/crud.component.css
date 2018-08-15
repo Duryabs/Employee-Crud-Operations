@@ -1,0 +1,157 @@
+.navbuttons{
+  
+  margin-left: 36px;
+}
+.names {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 18em;
+}
+.names li {
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+  background-color: #EEE;
+  width: 160%;
+  margin: 0.7em 0.3em 0em 0em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+
+.names li:hover {
+  background-color: #eee;
+  border:darkslategrey;
+  color: #607D8B;
+  left: .1em;
+}
+
+.names a {
+  color: #888;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  width: 250px;
+}
+
+.names a:hover {
+  color:#607D8B;
+}
+
+.names .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #607D8B;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  min-width: 16px;
+  text-align: right;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+
+.button {
+  background-color: #eee;
+  border:darkslategrey;
+  color: darkslategrey;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.eadbutton {
+  background-color: #eee;
+  border:darkslategrey;
+  color: darkslategrey;
+  margin-left: 30px;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+}
+
+nav{
+  border:darkslategrey;
+ }
+
+ nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
+  
+}
+nav a:visited, a:link {
+  color: #607d8b;
+}
+ nav a:hover {
+  color: #039be5;
+  background-color: #cfd8dc;
+
+}
+nav button:hover {
+  color: #039be5;
+  background-color: #cfd8dc;
+
+}
+ nav a.active {
+  color: #039be5;
+  font-size: 150%;
+}
+
+button:hover {
+  background-color: #cfd8dc;
+}
+
+button.delete {
+  position: relative;
+  left: 194px;
+  top: -9px;
+  margin: 10px;
+  background-color: gray !important;
+  color: white;
+}
+h1 {
+  font-size: 1.2em;
+  color: #999;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 1.4em;
+  margin-top: 0;
+  padding-top: 0;
+  margin-left: 36px;
+}
+
+.label
+{
+ margin-left: 38px;  
+}
+
+.search {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 18em;
+}
+.search li {
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+  background-color: #EEE;
+  margin: 0.7em 0.3em 0em 0em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}

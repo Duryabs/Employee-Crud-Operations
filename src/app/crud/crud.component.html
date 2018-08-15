@@ -1,0 +1,71 @@
+<div class="navbuttons">
+<nav>
+  
+  <button class="button" (click)="sethomeflag()">
+  <a routerLink="">HOME</a>
+    </button>
+   
+  <button class="button" (click)="setaddflag()"><a routerLink="">ADD</a>
+  </button>
+  <button class="button" (click)="setsearchflag()"><a routerLink="">SEARCH</a>
+  </button>
+
+</nav>
+</div>
+<br>
+<div *ngIf="homeselect" class="names">
+    <h2>Employee Names</h2>
+  
+  <ul>
+     
+    <li *ngFor="let name of namelist">
+      <span class="badge"> {{name.id}} </span> 
+      <span>{{name.name}}</span>  
+    
+    <button class="eadbutton" title="delete hero"
+      (click)="delete(name)">X</button>
+      <button class="eadbutton" title="Edit hero"
+      (click)="seteditflag(name)">E</button>
+      
+  </li>
+</ul>
+</div>
+
+<div *ngIf="addselect">
+  <br>
+  <h2>Add Name</h2>
+  <label class="label">Name:
+    <input #name text=" " placeholder="name">
+  </label>
+    <button class="eadbutton" (click)="add(name.value); name.value=''" >ADD</button>
+</div>
+
+<div *ngIf="editselect">
+ <h2>Edit Name</h2>
+<div id="edit"> 
+    <label class="label">Name:
+      <input #editBox id="editBox" [(ngModel)]="currents.name"/>
+      <button class="eadbutton" (click)="save(editBox.value); editBox.value=' '" >Edit</button>    
+    </label>
+  </div>
+ </div>
+
+ 
+ <div *ngIf="searchselect" class="names">
+  <h2>Search Name</h2>
+  <div> 
+    <label class="label">Name:
+      <input #searchBox id="search-box" (click)="search(searchBox.value)"/>
+      <button class="eadbutton" (click)="search(searchBox.value)" >Search</button>    
+    </label>
+    <ul>
+         
+    <li *ngFor="let s of searchlist$ | async" >
+      <span class="badge"> {{s.id}} </span> 
+      <span>{{s.name}}</span>  
+    </li>
+      </ul>  
+
+  </div>
+ </div>
+  
